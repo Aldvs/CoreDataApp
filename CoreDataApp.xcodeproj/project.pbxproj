@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84C02B2927AC3F1E00F4FBD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C02B2827AC3F1E00F4FBD9 /* AppDelegate.swift */; };
-		84C02B2D27AC3F1E00F4FBD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C02B2C27AC3F1E00F4FBD9 /* ViewController.swift */; };
+		84C02B2D27AC3F1E00F4FBD9 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C02B2C27AC3F1E00F4FBD9 /* TaskListViewController.swift */; };
 		84C02B3327AC3F1E00F4FBD9 /* CoreDataApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84C02B3127AC3F1E00F4FBD9 /* CoreDataApp.xcdatamodeld */; };
 		84C02B3527AC3F2000F4FBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C02B3427AC3F2000F4FBD9 /* Assets.xcassets */; };
 		84C02B3827AC3F2000F4FBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C02B3627AC3F2000F4FBD9 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		84C02B2527AC3F1E00F4FBD9 /* CoreDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C02B2827AC3F1E00F4FBD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84C02B2C27AC3F1E00F4FBD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84C02B2C27AC3F1E00F4FBD9 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		84C02B3227AC3F1E00F4FBD9 /* CoreDataApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataApp.xcdatamodel; sourceTree = "<group>"; };
 		84C02B3427AC3F2000F4FBD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C02B3727AC3F2000F4FBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				84C02B2827AC3F1E00F4FBD9 /* AppDelegate.swift */,
-				84C02B2C27AC3F1E00F4FBD9 /* ViewController.swift */,
+				84C02B2C27AC3F1E00F4FBD9 /* TaskListViewController.swift */,
 				84C02B3427AC3F2000F4FBD9 /* Assets.xcassets */,
 				84C02B3627AC3F2000F4FBD9 /* LaunchScreen.storyboard */,
 				84C02B3927AC3F2000F4FBD9 /* Info.plist */,
@@ -135,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C02B3327AC3F1E00F4FBD9 /* CoreDataApp.xcdatamodeld in Sources */,
-				84C02B2D27AC3F1E00F4FBD9 /* ViewController.swift in Sources */,
+				84C02B2D27AC3F1E00F4FBD9 /* TaskListViewController.swift in Sources */,
 				84C02B2927AC3F1E00F4FBD9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
