@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import CoreData
 
 class TaskViewController: UIViewController {
 
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     private lazy var taskTextField: UITextField = {
        let textField = UITextField()
         
@@ -22,7 +25,7 @@ class TaskViewController: UIViewController {
             withTitle: "Save Task",
             andColor: UIColor(red: 21/255, green: 101/255, blue: 192/255, alpha: 194/255),
             action: UIAction { _ in
-                self.dismiss(animated: true)
+                self.save()
             })
     }()
     
@@ -86,5 +89,27 @@ class TaskViewController: UIViewController {
         
         return UIButton(configuration: buttonConfiguration, primaryAction: action)
         }
+    
+    private func save() {
+        
+        // Для сложных взаимосвязей в модели
+//        guard let entityDeescription = NSEntityDescription.entity(forEntityName: "Task", in: context) else { return }
+//        guard let task = NSManagedObject(entity: entityDeescription, insertInto: context) as? Task else { return }
+        
+        //Для простой модели
+        let task = Task(context: context)
+        
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+        task.name = taskTextField.text
+        dismiss(animated: true)
+    }
 }
 
